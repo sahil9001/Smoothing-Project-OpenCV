@@ -29,20 +29,21 @@ const Footer = () => {
         </div>
         <div className="smoothing__footer-links-div">
           <h4>About</h4>
+          <a href="https://www.linkedin.com/in/sahil-silare-76a65014b/">
           <p>LinkedIn</p>
+          </a>
+          <a href="https://github.com/sahil9001">
           <p>Github</p>
+          </a>
+          <a href="https://codeforces.com/profile/gigawhiz">
           <p>Codeforces</p>
-          <p></p>
+          </a>
         </div>
 
         <div className="smoothing__footer-links_logo">
           <p>7480 Mockingbird Hill undefined</p>
           <p className="smalltext">© 2022, Sahil Silare</p>
-          <div className="smoothing__footer-links_logo-social">
-            <img src={twitter} alt="twitter" />
-            <img src={telegram} alt="twitter" />
-            <img src={github} alt="twitter" />
-          </div>
+          
         </div>
       </div>
     </div>

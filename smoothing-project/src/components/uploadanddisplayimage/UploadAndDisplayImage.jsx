@@ -8,6 +8,13 @@ const UploadAndDisplayImage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [filteredImage, setFilteredImage] = useState(null);
   const [value, setValue] = useState("0");
+  const download = e => {
+          const url = "data:image/jpg;base64," + filteredImage;
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = "image.png";
+          link.click();
+   };
   const options = [
     { label: "Averaging Filter", value: "0" },
     { label: "Gaussian Blurring", value: "1" },
@@ -143,6 +150,14 @@ const UploadAndDisplayImage = () => {
             width={"500px"}
             src={"data:image/jpg;base64," + filteredImage }
           />
+          <div className="smoothing__uploadanddisplayimage-button-container">
+            <button
+              onClick={() => download(filteredImage)}
+              className="smoothing__uploadanddisplayimage-button"
+            >
+              Download
+            </button>
+          </div>
           {/* <p>{filteredImage}</p> */}
         </div>
       )}

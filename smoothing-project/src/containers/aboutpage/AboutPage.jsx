@@ -4,9 +4,12 @@ import sahil from "../../assets/sahil.jpeg";
 import twitter from "../../assets/twitter.svg";
 import telegram from "../../assets/telegram.svg";
 import github from "../../assets/github.svg";
+import  FadeIn  from 'react-fade-in';
+
 const AboutPage = () => {
   return (
     <div className='smoothing__aboutpage section__padding'>
+        <FadeIn>
         <div className="smoothing__aboutpage-heading">
             Developed by
         </div>
@@ -42,6 +45,7 @@ I'm doing my undergrad at the National Institute of Technology - Raipur graduati
                 </div>
             </div>
         </div>
+        </FadeIn>
     </div>
   )
 }

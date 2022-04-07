@@ -38,7 +38,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="smoothing__navbar-login">
+        <Link to="/contact">
         <button type="button"> Contact </button>
+        </Link>
       </div>
       <div className="smoothing__navbar-menu">
         {toggleMenu ? (
