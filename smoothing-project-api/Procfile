@@ -1,0 +1,5 @@
+heroku buildpacks:clear # to clear previous configs
+heroku buildpacks:add --index 1 heroku-community/apt 
+heroku buildpacks:add --index 2 heroku/python 
+heroku ps:scale web=1
+web: gunicorn wsgi:app
